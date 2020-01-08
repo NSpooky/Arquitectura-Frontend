@@ -1,0 +1,314 @@
+:root {
+    --gris-oscuro: #1d252c;
+    --gris-claro: #fafafa;
+    --gris:#1b2127;
+    --celeste: #026fff;
+}
+
+/* global  */
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /* font-style: italic; */
+} 
+/* end global  */
+
+/* header */
+/* figure {
+
+} */
+
+.header {
+    background-color: var(--gris-oscuro);
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: inherit;
+    text-decoration: none; 
+    padding: 0 10px;
+}
+
+.header ul {
+    display: flex;
+    height: inherit;
+    /* align-items: center; */
+}
+
+.header ul li {
+    height: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    height: inherit;
+}
+/* end header */
+
+/* hero */
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    /* text-transform: uppercase; */
+    /* text-decoration: underline; */
+}
+
+h1 strong {
+    color: var(--celeste);
+}
+
+.hero {
+    height: 300px;
+    /* background-image: url("../images/hero.jpg"); */
+    background-color: var(--gris);
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero_image {
+    object-fit: cover;
+}
+/* end hero */
+
+/* portfolio */
+article {
+    margin: 50px;
+    padding: 50px;
+}
+
+h2 {
+    color: var(--celeste);
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h6 {
+
+}
+
+.portfolio {
+    background-color: var(--gris-claro);
+    padding: 20px;
+}
+
+.project {
+    /* border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-left: 10px solid green;
+    border-bottom: 10px solid green; */
+    /* border-color: red;
+    border-width: 15px;
+    border-style: solid; */
+    border: 1px solid var(--gris);
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    /* box-sizing: border-box; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project_course, .project_date, .project_url {
+    margin: 10px 0;
+}
+
+.project_details {
+    width: 500px;
+}
+
+.project_description {
+    font-size: 20px;
+}
+
+.project_imageContainer {
+    width: 500px;
+}
+
+.project_tittle {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* end portfolio */
+
+/* experience */
+.event_list_tittle {
+    margin-left: 20px;
+}
+.event_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event {
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: #f4fbff;
+    padding: 0;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event_details {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event_description {
+    margin: 15px;
+    text-align: left;
+}
+
+.event_url {
+    border: 1px solid var(--celeste);
+    padding: 5px 20px;
+    text-decoration: none;
+    color: var(--celeste);
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/* end experience */
+
+/* contact */
+.form_email input {
+    border-color: gray;
+    padding: 5px 20px 5px 25px;
+    background-image: url("../images/letter.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.form_email h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px;
+}
+
+.form_email button {
+    display: block;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px auto 0;
+}
+
+.contact {
+    background-color: var(--celeste);
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .social {
+    border: 1px solid red;
+} */
+
+.social_link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social_link.twitter {
+    background-image: url("../images/twitter.svg");
+    
+}
+
+.social_link.facebook {
+    background-image: url("../images/facebook.svg");
+}
+ 
+.social_link.github {
+    background-image: url("../images/github-logo.svg");
+}
+
+.social_link.instagram {
+    background-image: url("../images/instagram.svg");
+} 
+ 
+/* end contact */
+
+/* footer */
+.footer {
+    color: white;
+    background-color: var(--gris-oscuro);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;}
+/* end footer */
+
+.container {
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}

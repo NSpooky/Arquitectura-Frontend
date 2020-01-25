@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: Arial;
+    perspective: 200px;
+    /* perspective-origin: center; */
+    /* perspective-origin: top; */
+    /* perspective-origin: bottom; */
+    /* perspective-origin: left; */
+    /* perspective-origin: right; */
+    /* perspective-origin: top right; */
+    /* perspective-origin: top left; */
+    /* perspective-origin: bottom right; */
+    /* perspective-origin: bottom left; */
+    /* transform: translate3d(x, y, z); */
+}
+
+.container {
+    border: 1px solid red;
+}
+
+.container:hover .cuadrado {
+    /* transform: skew(x,y); */
+    /* transform: skew(45deg, 45deg); */
+    transform: skew(10deg, 10deg);
+
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: #7dc900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    transition: .3s;
+}
